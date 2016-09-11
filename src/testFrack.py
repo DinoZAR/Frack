@@ -1,23 +1,26 @@
+import antlr4
+
 from language.FrackLexer import FrackLexer
 from language.FrackParser import FrackParser
-from language.FrackListener import FrackListener
-import antlr4
-from tree_debugger import TreeDebugger
+from parser.listener import Listener
+
 
 TEST_FILE = 'test.frack'
 
 
 def main():
 
+    # Setup lexers and parsers
     lexer = FrackLexer(antlr4.FileStream(TEST_FILE))
     stream = antlr4.CommonTokenStream(lexer)
     parser = FrackParser(stream)
     tree = parser.program()
 
-    debugger = TreeDebugger()
+    # Actually parse the program
+    listener = Listener()
     walker = antlr4.ParseTreeWalker()
-
-    walker.walk(debugger, tree)
+    walker.walk(listener, tree)
+    #print(tree.toStringTree())
 
     print('done!')
 
