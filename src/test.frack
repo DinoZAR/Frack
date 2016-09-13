@@ -1,2 +1,7 @@
-hello (things as Yarp) {}
-helloYou (farnk, noops as Garp) {}
+hello (things as Yarp) {
+
+    coolThings as int = 7 + 4
+    marf as string = "Noof is good!?"
+
+    coolThings.whatToDo(38, 40) + 29
+}

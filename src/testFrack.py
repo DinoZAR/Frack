@@ -19,8 +19,11 @@ def main():
     # Actually parse the program
     listener = Listener()
     walker = antlr4.ParseTreeWalker()
-    walker.walk(listener, tree)
-    #print(tree.toStringTree())
+    #walker.walk(listener, tree)
+    print(tree.toStringTree())
+
+    for f in listener.functions:
+        print(f)
 
     print('done!')
 

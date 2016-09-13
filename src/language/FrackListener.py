@@ -53,12 +53,21 @@ class FrackListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by FrackParser#statement.
-    def enterStatement(self, ctx:FrackParser.StatementContext):
+    # Enter a parse tree produced by FrackParser#AssignmentStatement.
+    def enterAssignmentStatement(self, ctx:FrackParser.AssignmentStatementContext):
         pass
 
-    # Exit a parse tree produced by FrackParser#statement.
-    def exitStatement(self, ctx:FrackParser.StatementContext):
+    # Exit a parse tree produced by FrackParser#AssignmentStatement.
+    def exitAssignmentStatement(self, ctx:FrackParser.AssignmentStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#ExpressionStatement.
+    def enterExpressionStatement(self, ctx:FrackParser.ExpressionStatementContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#ExpressionStatement.
+    def exitExpressionStatement(self, ctx:FrackParser.ExpressionStatementContext):
         pass
 
 
@@ -71,12 +80,84 @@ class FrackListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by FrackParser#expression.
-    def enterExpression(self, ctx:FrackParser.ExpressionContext):
+    # Enter a parse tree produced by FrackParser#Div.
+    def enterDiv(self, ctx:FrackParser.DivContext):
         pass
 
-    # Exit a parse tree produced by FrackParser#expression.
-    def exitExpression(self, ctx:FrackParser.ExpressionContext):
+    # Exit a parse tree produced by FrackParser#Div.
+    def exitDiv(self, ctx:FrackParser.DivContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Add.
+    def enterAdd(self, ctx:FrackParser.AddContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Add.
+    def exitAdd(self, ctx:FrackParser.AddContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#ValueExpr.
+    def enterValueExpr(self, ctx:FrackParser.ValueExprContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#ValueExpr.
+    def exitValueExpr(self, ctx:FrackParser.ValueExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#StringExpr.
+    def enterStringExpr(self, ctx:FrackParser.StringExprContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#StringExpr.
+    def exitStringExpr(self, ctx:FrackParser.StringExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Sub.
+    def enterSub(self, ctx:FrackParser.SubContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Sub.
+    def exitSub(self, ctx:FrackParser.SubContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Not.
+    def enterNot(self, ctx:FrackParser.NotContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Not.
+    def exitNot(self, ctx:FrackParser.NotContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Mult.
+    def enterMult(self, ctx:FrackParser.MultContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Mult.
+    def exitMult(self, ctx:FrackParser.MultContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#NumExpr.
+    def enterNumExpr(self, ctx:FrackParser.NumExprContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#NumExpr.
+    def exitNumExpr(self, ctx:FrackParser.NumExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Paren.
+    def enterParen(self, ctx:FrackParser.ParenContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Paren.
+    def exitParen(self, ctx:FrackParser.ParenContext):
         pass
 
 
