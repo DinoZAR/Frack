@@ -80,15 +80,6 @@ class FrackListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by FrackParser#Div.
-    def enterDiv(self, ctx:FrackParser.DivContext):
-        pass
-
-    # Exit a parse tree produced by FrackParser#Div.
-    def exitDiv(self, ctx:FrackParser.DivContext):
-        pass
-
-
     # Enter a parse tree produced by FrackParser#Add.
     def enterAdd(self, ctx:FrackParser.AddContext):
         pass
@@ -125,12 +116,84 @@ class FrackListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by FrackParser#IfBlockExpr.
+    def enterIfBlockExpr(self, ctx:FrackParser.IfBlockExprContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#IfBlockExpr.
+    def exitIfBlockExpr(self, ctx:FrackParser.IfBlockExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Exponent.
+    def enterExponent(self, ctx:FrackParser.ExponentContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Exponent.
+    def exitExponent(self, ctx:FrackParser.ExponentContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#LessThanEqualTo.
+    def enterLessThanEqualTo(self, ctx:FrackParser.LessThanEqualToContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#LessThanEqualTo.
+    def exitLessThanEqualTo(self, ctx:FrackParser.LessThanEqualToContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#NotEquals.
+    def enterNotEquals(self, ctx:FrackParser.NotEqualsContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#NotEquals.
+    def exitNotEquals(self, ctx:FrackParser.NotEqualsContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Div.
+    def enterDiv(self, ctx:FrackParser.DivContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Div.
+    def exitDiv(self, ctx:FrackParser.DivContext):
+        pass
+
+
     # Enter a parse tree produced by FrackParser#Not.
     def enterNot(self, ctx:FrackParser.NotContext):
         pass
 
     # Exit a parse tree produced by FrackParser#Not.
     def exitNot(self, ctx:FrackParser.NotContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#Equals.
+    def enterEquals(self, ctx:FrackParser.EqualsContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#Equals.
+    def exitEquals(self, ctx:FrackParser.EqualsContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#LessThan.
+    def enterLessThan(self, ctx:FrackParser.LessThanContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#LessThan.
+    def exitLessThan(self, ctx:FrackParser.LessThanContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#GreaterThanEqualTo.
+    def enterGreaterThanEqualTo(self, ctx:FrackParser.GreaterThanEqualToContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#GreaterThanEqualTo.
+    def exitGreaterThanEqualTo(self, ctx:FrackParser.GreaterThanEqualToContext):
         pass
 
 
@@ -152,12 +215,30 @@ class FrackListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by FrackParser#GreaterThan.
+    def enterGreaterThan(self, ctx:FrackParser.GreaterThanContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#GreaterThan.
+    def exitGreaterThan(self, ctx:FrackParser.GreaterThanContext):
+        pass
+
+
     # Enter a parse tree produced by FrackParser#Paren.
     def enterParen(self, ctx:FrackParser.ParenContext):
         pass
 
     # Exit a parse tree produced by FrackParser#Paren.
     def exitParen(self, ctx:FrackParser.ParenContext):
+        pass
+
+
+    # Enter a parse tree produced by FrackParser#ifBlock.
+    def enterIfBlock(self, ctx:FrackParser.IfBlockContext):
+        pass
+
+    # Exit a parse tree produced by FrackParser#ifBlock.
+    def exitIfBlock(self, ctx:FrackParser.IfBlockContext):
         pass
 
 

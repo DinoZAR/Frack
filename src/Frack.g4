@@ -16,15 +16,25 @@ statement : assignment # AssignmentStatement
 assignment : IDENT dataType? '=' expression;
 
 // Expressions
-expression : expression '*' expression # Mult
+expression : expression '^' expression # Exponent
+    | expression '*' expression # Mult
     | expression '/' expression # Div
     | expression '+' expression # Add
     | expression '-' expression # Sub
+    | expression '=' expression # Equals
+    | expression '!=' expression # NotEquals
+    | expression '<' expression # LessThan
+    | expression '<=' expression # LessThanEqualTo
+    | expression '>' expression # GreaterThan
+    | expression '>=' expression #GreaterThanEqualTo
     | '!' expression # Not
     | '(' expression ')' # Paren
+    | ifBlock # IfBlockExpr
     | value # ValueExpr
     | STRING # StringExpr
     | NUM # NumExpr;
+
+ifBlock : 'if' expression 'then' expression 'else' expression;
 
 value : IDENT '.' value
     | IDENT '(' (expression (',' expression)*)? ')' '.' value
@@ -41,6 +51,8 @@ fragment CHAR : ~["\\\r\n"]
 fragment ESCAPE_SEQUENCE : '\\x' HEX+;
 fragment HEX : [0-9a-fA-F];
 
-NUM : [0-9]+('.'[0-9]+)?;
+NUM : [0-9]+'.'[0-9]+
+    | [0-9]+'.'
+    | '.'[0-9]+;
 IDENT : [a-zA-Z_][a-zA-Z1-9_]*;
 WS : [ \t\r\n]+ -> skip;
